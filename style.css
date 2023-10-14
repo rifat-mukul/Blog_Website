@@ -173,11 +173,11 @@ nav li:hover{
     margin: 2rem;
     display: flex;
     flex-direction: column;
-    transition: transform 0.7s;
+    transition: transform 0.5s;
 }
 
 .card:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
     cursor: crosshair;
 }
 
@@ -199,6 +199,42 @@ nav li:hover{
     width: 80%;
 }
 /* blog about ends here */
+
+/* <!-- archives section starts here --> */
+#archive{
+    padding: 5rem 1rem;
+    min-height: 95vh;
+}
+
+.archives-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.5rem solid;
+    border-bottom: 0.5rem solid;
+}
+
+.archives-container-lists{
+    display: flex;
+    text-align: center;
+}
+
+.archives-container-list{
+    margin: 2rem;
+}
+.archives-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    transition: transform 0.8s;
+}
+
+.archives-img:hover{
+    transform: scale(1.5);
+}
+
+/* <!-- archives section ends here --> */
 
 /* responsive starts here */
 
@@ -231,6 +267,12 @@ nav li:hover{
 
     .card-container{
         width: 80%;
+
+    }
+
+    #archive{
+        min-height: auto;
+    }
 }
 
 @media (max-width: 600px){
@@ -274,6 +316,12 @@ nav li:hover{
 
     .card-container{
         width: 90%;
+    }
+
+    .archives-container-lists{
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (max-width: 400px){
