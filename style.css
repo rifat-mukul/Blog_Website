@@ -157,8 +157,6 @@ nav li:hover{
 
 /* blog about starts here */
 #blog-about{
-    min-height: 95vb;
-    padding: 5rem 1rem;
     background-color: #4e556d;
 }
 
@@ -203,10 +201,6 @@ nav li:hover{
 /* blog about ends here */
 
 /* <!-- archives section starts here --> */
-#archive{
-    padding: 5rem 1rem;
-    min-height: 95vh;
-}
 
 .archives-container{
     display: flex;
@@ -301,6 +295,54 @@ nav li:hover{
 }
 /* blog posts section ends here */
 
+/* contact section starts here */
+/* #contact-section{
+
+} */
+
+#contact-form{
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem black, -0.1rem 0 0.1rem black;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control label{
+    font-size: 1.7rem;
+    flex: 0.3;
+}
+
+input, textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.7rem;
+}
+
+textarea{
+    resize: none;
+    height: 12vb;
+}
+
+.form-btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-btn{
+    width: 30%;
+}
+/* contact section ends here */
+
 /* responsive starts here */
 
 @media (max-width: 992px){
@@ -343,6 +385,10 @@ nav li:hover{
         flex-direction: column;
         margin-bottom: 3rem;
         width: 80%;
+    }
+
+    #contact-section{
+        min-height: auto;
     }
 }
 
@@ -395,6 +441,18 @@ nav li:hover{
 
     .blog-post{
         width: 90%;
+    }
+
+    #contact-form{
+        width: 90%;
+    }
+
+    .form-control{
+        flex-direction: column;
+    }
+
+    .form-control label{
+        margin-bottom: 0.6rem;
     }
 
 }
