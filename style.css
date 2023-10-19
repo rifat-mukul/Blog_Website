@@ -1,5 +1,4 @@
-/* font-family: 'Italianno', cursive;
-font-family: 'Roboto', sans-serif; */
+
 /* reset code and common code starts here */
 
 *{
@@ -296,9 +295,9 @@ nav li:hover{
 /* blog posts section ends here */
 
 /* contact section starts here */
-/* #contact-section{
-
-} */
+#contact-section{
+    min-height: 90vh;
+}
 
 #contact-form{
     padding: 1rem;
@@ -342,6 +341,44 @@ textarea{
     width: 30%;
 }
 /* contact section ends here */
+
+/* footer section starts here */
+footer{
+    background-color: #202124;
+    padding: 1rem;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-text{
+    font-size: 2rem;
+    color: azure;
+    font-family: 'Italianno', cursive;
+}
+
+.footer-icon{
+    font-size: 2rem;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+    transition: all 0.5s;
+}
+
+nav li:last-child{
+    margin-right: 0rem;
+}
+
+nav li:hover{
+    background-color: black;
+    border: .2rem solid whitesmoke;
+    border-radius: 2rem;
+}
+/* footer section ends here */
 
 /* responsive starts here */
 
@@ -451,8 +488,20 @@ textarea{
         flex-direction: column;
     }
 
+    input, textarea{
+        max-width: 100%;
+    }
+
     .form-control label{
         margin-bottom: 0.6rem;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    #manubar2{
+        display: flex;
     }
 
 }
